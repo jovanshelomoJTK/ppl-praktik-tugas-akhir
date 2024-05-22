@@ -1,0 +1,5 @@
+# Created at 2024-05-19T22:02:44.047
+Boot Manifest-JAR contains absolute paths in classpath 'D:\documents\polban\sem 6\ppl praktik\W12\webautomation\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

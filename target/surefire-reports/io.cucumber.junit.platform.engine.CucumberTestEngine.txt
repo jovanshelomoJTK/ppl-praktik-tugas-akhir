@@ -1,0 +1,59 @@
+-------------------------------------------------------------------------------
+Test set: io.cucumber.junit.platform.engine.CucumberTestEngine
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 20.905 s <<< FAILURE! - in io.cucumber.junit.platform.engine.CucumberTestEngine
+Login Functionality.Login dengan username yang terdaftar dan password tidak sesuai  Time elapsed: 2.779 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at com.ppl.stepdefinitions.LoginStepDefinition.Aplikasi_menampilkan_pesan_error(LoginStepDefinition.java:45)
+	at ✽.Aplikasi menampilkan pesan error "Username and password do not match any user in this service !"(file:///D:/documents/polban/sem%206/ppl%20praktik/W12/webautomation/src/test/resources/login.feature:15)
+
+Login Functionality.Login dengan username yang tidak terdaftar  Time elapsed: 2.77 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at com.ppl.stepdefinitions.LoginStepDefinition.Aplikasi_menampilkan_pesan_error(LoginStepDefinition.java:45)
+	at ✽.Aplikasi menampilkan pesan error "Username and password do not match any user in this service !"(file:///D:/documents/polban/sem%206/ppl%20praktik/W12/webautomation/src/test/resources/login.feature:22)
+
+Login Functionality.Login dengan username tidak terisi dan password terisi  Time elapsed: 2.573 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at com.ppl.stepdefinitions.LoginStepDefinition.Aplikasi_menampilkan_pesan_error(LoginStepDefinition.java:45)
+	at ✽.Aplikasi menampilkan pesan error "You need Username !"(file:///D:/documents/polban/sem%206/ppl%20praktik/W12/webautomation/src/test/resources/login.feature:28)
+
+Login Functionality.Login dengan username terisi dan password tidak terisi  Time elapsed: 2.807 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at com.ppl.stepdefinitions.LoginStepDefinition.Aplikasi_menampilkan_pesan_error(LoginStepDefinition.java:45)
+	at ✽.Aplikasi menampilkan pesan error "You need Password !"(file:///D:/documents/polban/sem%206/ppl%20praktik/W12/webautomation/src/test/resources/login.feature:34)
+
+Login Functionality.Login dengan username dan password tidak terisi  Time elapsed: 2.737 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at com.ppl.stepdefinitions.LoginStepDefinition.Aplikasi_menampilkan_pesan_error(LoginStepDefinition.java:45)
+	at ✽.Aplikasi menampilkan pesan error "You need Username & Password !"(file:///D:/documents/polban/sem%206/ppl%20praktik/W12/webautomation/src/test/resources/login.feature:39)
+

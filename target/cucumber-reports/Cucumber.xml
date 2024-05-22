@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="20.808" tests="7" skipped="0" failures="5" errors="0">
+<testcase classname="Login Functionality" name="Login dengan username dan password yang terdaftar pada sistem" time="4.099">
+<system-out><![CDATA[
+Given Pengguna sudah berada pada halaman login..............................passed
+When Pengguna memasukan username "standard_user"............................passed
+And Pengguna memasukan password "secret_sauce"..............................passed
+And Pengguna menekan tombol login...........................................passed
+Then Aplikasi menampilkan halaman dashboard.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Login dengan username yang terdaftar dan password tidak sesuai" time="2.772">
+<failure type="org.opentest4j.AssertionFailedError" message="expected: &lt;true&gt; but was: &lt;false&gt;">
+<![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at com.ppl.stepdefinitions.LoginStepDefinition.Aplikasi_menampilkan_pesan_error(LoginStepDefinition.java:45)
+	at ✽.Aplikasi menampilkan pesan error "Username and password do not match any user in this service !"(file:///D:/documents/polban/sem%206/ppl%20praktik/W12/webautomation/src/test/resources/login.feature:15)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Pengguna sudah berada pada halaman login..............................passed
+When Pengguna memasukan username "standard_user"............................passed
+And Pengguna memasukan password "secret_pass"...............................passed
+And Pengguna menekan tombol login...........................................passed
+Then Aplikasi menampilkan pesan error "Username and password do not match any user in this service !".failed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Login dengan username yang tidak terdaftar" time="2.765">
+<failure type="org.opentest4j.AssertionFailedError" message="expected: &lt;true&gt; but was: &lt;false&gt;">
+<![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at com.ppl.stepdefinitions.LoginStepDefinition.Aplikasi_menampilkan_pesan_error(LoginStepDefinition.java:45)
+	at ✽.Aplikasi menampilkan pesan error "Username and password do not match any user in this service !"(file:///D:/documents/polban/sem%206/ppl%20praktik/W12/webautomation/src/test/resources/login.feature:22)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Pengguna sudah berada pada halaman login..............................passed
+When Pengguna memasukan username "customer".................................passed
+And Pengguna memasukan password "secret_sauce"..............................passed
+And Pengguna menekan tombol login...........................................passed
+Then Aplikasi menampilkan pesan error "Username and password do not match any user in this service !".failed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Login dengan username tidak terisi dan password terisi" time="2.569">
+<failure type="org.opentest4j.AssertionFailedError" message="expected: &lt;true&gt; but was: &lt;false&gt;">
+<![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at com.ppl.stepdefinitions.LoginStepDefinition.Aplikasi_menampilkan_pesan_error(LoginStepDefinition.java:45)
+	at ✽.Aplikasi menampilkan pesan error "You need Username !"(file:///D:/documents/polban/sem%206/ppl%20praktik/W12/webautomation/src/test/resources/login.feature:28)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Pengguna sudah berada pada halaman login..............................passed
+When Pengguna memasukan password "secret_sauce".............................passed
+And Pengguna menekan tombol login...........................................passed
+Then Aplikasi menampilkan pesan error "You need Username !".................failed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Login dengan username terisi dan password tidak terisi" time="2.803">
+<failure type="org.opentest4j.AssertionFailedError" message="expected: &lt;true&gt; but was: &lt;false&gt;">
+<![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at com.ppl.stepdefinitions.LoginStepDefinition.Aplikasi_menampilkan_pesan_error(LoginStepDefinition.java:45)
+	at ✽.Aplikasi menampilkan pesan error "You need Password !"(file:///D:/documents/polban/sem%206/ppl%20praktik/W12/webautomation/src/test/resources/login.feature:34)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Pengguna sudah berada pada halaman login..............................passed
+When Pengguna memasukan username "standard_user"............................passed
+And Pengguna menekan tombol login...........................................passed
+Then Aplikasi menampilkan pesan error "You need Password !".................failed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Login dengan username dan password tidak terisi" time="2.734">
+<failure type="org.opentest4j.AssertionFailedError" message="expected: &lt;true&gt; but was: &lt;false&gt;">
+<![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at com.ppl.stepdefinitions.LoginStepDefinition.Aplikasi_menampilkan_pesan_error(LoginStepDefinition.java:45)
+	at ✽.Aplikasi menampilkan pesan error "You need Username & Password !"(file:///D:/documents/polban/sem%206/ppl%20praktik/W12/webautomation/src/test/resources/login.feature:39)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Pengguna sudah berada pada halaman login..............................passed
+When Pengguna menekan tombol login..........................................passed
+Then Aplikasi menampilkan pesan error "You need Username & Password !"......failed
+]]></system-out>
+</testcase>
+<testcase classname="Logout Functionality" name="Pengguna logout dari aplikasi" time="2.891">
+<system-out><![CDATA[
+Given Pengguna sudah login dengan berhasil..................................passed
+When Pengguna menekan tombol menu bar.......................................passed
+And Pengguna menekan tombol logout..........................................passed
+Then Aplikasi menampilkan halaman login.....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
