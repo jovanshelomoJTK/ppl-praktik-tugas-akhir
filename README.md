@@ -1,17 +1,16 @@
-# Web Automation Testing
+# Project Web Automation Testing & API Testing
 
-## Cara Menjalankan
+# How To Run
 
 ```
 mvn test
+mvn surefire-report:report-only
 ```
 
-## Letak Report
+# Hasil Report
 
-- Timeline: `target/cucumber-reports/CucumberTimeline/index.html`
+Untuk report secara keseluruhan:
+Terdapat pada folder target/site/surefire-report.html
 
-- HTML: `target/cucumber-reports/Cucumber.html`
-
-- JSON: `target/cucumber-reports/Cucumber.json`
-
-- XML: `target/cucumber-reports/Cucumber.xml`
+Untuk report spesifik cucumber:
+Terdapat pada folder target/cucumber-reports/Cucumber.html
