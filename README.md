@@ -3,7 +3,7 @@
 Program automation testing ini berfokus pada pengujian API dan Web Application. Program ini menggunakan bahasa Java untuk pembuatan script test dan Maven sebagai build tools. Pengujian dilakukan menggunakan berbagai dependency dan plugin untuk memastikan fungsionalitas API dan Web Apllication berjalan dengan baik.
 
 Terdapat 2 pengujian pada program, diantaranya:
-API Testing untuk menguji API User Controller pada tautan https://dummyapi.io/ menggunakan Rest Assured dan Cucumber
+API Testing untuk menguji API User Controller pada tautan https://dummyapi.io/ menggunakan Rest Assured dan Cucumber, dan
 Web Testing untuk menguji berbagai fitur dan end to end pada web SWAG LABS dengan tautan https://www.saucedemo.com/ menggunakan Selenium dan Cucumber
 
 # Build With
