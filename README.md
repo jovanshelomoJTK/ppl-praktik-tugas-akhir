@@ -279,7 +279,7 @@ Pembuatan test case meliputi test positif dan test negatif, yaitu
     3 Test Case untuk halaman Checkout
     1 Test Case untuk pengujian end to end
 
-Note. Pendekatan pengujian menggunakan black box testing dengan metode ECP dan BVA untuk pengujian API User Controller sedangkan ntuk pengujian Web SWAG Labs menggunakan metode ECP,BVA, dan Decision Table.
+Note. Pendekatan pengujian dilakukan dengan menggunakan black box testing. untuk pengujian API User Controller, dilakukan dengan metode ECP dan BVA, sedangkan untuk pengujian Web SWAG Labs dilakukan menggunakan metode ECP,BVA, dan Decision Table.
 Satuan unit adalah fitur atau fungsi software
 
 # Author
@@ -299,3 +299,4 @@ Daftar resource yang dapat dipelajari
 - <a href="https://www.saucedemo.com/">Sauce Demo Web</a>
 - <a href="https://cucumber.io/docs/cucumber/">Cucumber documentation</a>
 - <a href="https://www.selenium.dev/documentation/">Selenium documentation</a>
+- <a href="https://rest-assured.io/">Rest Assured documentation</a>
